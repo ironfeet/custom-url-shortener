@@ -50,19 +50,21 @@ To use:
 1. https://ironfeet.me
  
 == Changelog == 
+= 0.3.5 =
+* removed liurl.cn and duanurl.com, because both of them are out of service.
 
 = 0.3.4 =
 * Confirmed compatibility with 3.0.1
-Thanks to Den(denicocc@gmail.com)
+Thank Den(denicocc@gmail.com)
 
 = 0.3.3 =
-* delete one URL shortener: n.nu ( n.nu is now in the process of discontinuing service, effective immediately )
+* delete one URL shortener: n.nu (n.nu is now in the process of discontinuing service, effective immediately)
 
 = 0.3.2 =
 * Confirmed compatibility with 2.9
 
 = 0.3.1 =
-* delete one URL shorter: tr.im ( tr.im is now in the process of discontinuing service, effective immediately. )
+* delete one URL shorter: tr.im (tr.im is now in the process of discontinuing service, effective immediately.)
 
 = 0.3 =
 * add two URL shorter: liurl.cn, duanurl.com
