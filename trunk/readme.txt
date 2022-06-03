@@ -1,6 +1,6 @@
 === Custom URL Shorter === 
-Contributors: Iron_Feet
-Donate link: http://www.iron-feet.cn/ 
+Contributors: Jie Wang
+Donate link: https://ironfeet.me 
 Tags: short URL, URL shorter 
 Requires at least: 2.6
 Tested up to: 3.0.1
@@ -10,7 +10,7 @@ Add a short URL link to your posts or pages easily.
  
 == Description == 
  
-You can easily add a short URL link to you posts or pages.
+You can easily add a short URL link to your posts or pages.
 
 Currently, the following URL shorter are supported: 
  
@@ -22,7 +22,7 @@ Currently, the following URL shorter are supported:
 * liurl.cn
 * duanurl.com
  
-You can also add other URL shorter. 
+You can also add other URL shortener. 
  
  
 == Installation == 
@@ -47,7 +47,7 @@ To use:
 
 == Screenshots == 
 
-1. http://www.iron-feet.cn
+1. https://ironfeet.me
  
 == Changelog == 
 
@@ -77,4 +77,4 @@ Thanks to Den(denicocc@gmail.com)
 No questions 
  
 == Feedback == 
-http://www.iron-feet.cn/it/wordpress-plugincustom-url-shorter/
+https://github.com/ironfeet/custom-url-shortener

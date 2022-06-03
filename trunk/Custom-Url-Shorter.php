@@ -1,11 +1,11 @@
 <?php
 /*
-Plugin Name: Custom URL Shorter
-Plugin URI: http://www.iron-feet.cn/it/wordpress-plugincustom-url-shorter/
+Plugin Name: Custom URL Shortener
+Plugin URI: https://github.com/ironfeet/custom-url-shortener
 Description: Add a short URL link to your posts or pages easily.
-Author: Iron_Feet
+Author: Jie Wang
 Version: 0.3.4
-Author URI: http://www.iron-feet.cn/
+Author URI: https://ironfeet.me
 */
 
 $arr_us = Array("adf.ly","bit.ly","is.gd","sn.im","tinyurl.com","liurl.cn","duanurl.com");
