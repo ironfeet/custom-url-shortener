@@ -25,19 +25,17 @@ You can also add any other URL shortener.
 To install: 
  
 
-1. Drop the 'custom-url-shorter' folder into your 'wp-content/plugins' folder 
+1. Drop the 'custom-url-shortener' folder into your 'wp-content/plugins' folder 
  
-2. Plugins page and activate the "Custom URL shorter"
+2. Plugins page and activate the "Custom URL shortener"
 
-3. Settings: Custom URL shorter , and configure it
+3. Settings: Custom URL shortener. And configure it
   
 To use: 
  
-1. The API of adf.ly can only be gained after your registration. The API address in this plugin is generated from my adf.ly account. You can use my API address or register your own API address as you wish. :) 
+1. Create a page temaplate with function custom_url_shorter();.
 
-2. Create a page temaplate with function custom_url_shorter();.
-
-3. Publish a page or a post with html [cus]. 
+2. Publish a page or a post with html [cus]. 
      
 
 == Screenshots == 
@@ -47,6 +45,7 @@ To use:
 == Changelog == 
 = 0.3.5 =
 * removed liurl.cn and duanurl.com, adf.ly, bit.ly, and sn.im.
+* The default URL shortener has been changed to is.gd
 
 = 0.3.4 =
 * Confirmed compatibility with 3.0.1
