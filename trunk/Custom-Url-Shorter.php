@@ -8,8 +8,8 @@ Version: 0.3.4
 Author URI: https://ironfeet.me
 */
 
-$arr_us = Array("adf.ly","bit.ly","is.gd","sn.im","tinyurl.com");
-$arr_us_api = Array("http://adf.ly/api.php?key=cc863b61c7f0c4695afa0054fa95c00a&uid=10155&url=","http://bit.ly/api?url=","http://is.gd/api.php?longurl=","http://sn.im/site/snip?r=simple&link=","http://tinyurl.com/api-create.php?url=");
+$arr_us = Array("is.gd","tinyurl.com");
+$arr_us_api = Array("https://is.gd/create.php?format=simple&url=","http://tinyurl.com/api-create.php?url=");
 
 // inline_uslink
 function inline_uslink($content='') 
