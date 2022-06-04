@@ -80,7 +80,7 @@ function cus_control()
 	{
 		$options = array(
 			'linktext' => 'Short URL',
-			'cus' => 'adf.ly'
+			'cus' => 'is.gd'
 		);
 	}
 	if($_POST['sent'] == 'Y')
@@ -93,7 +93,7 @@ function cus_control()
 ?>
 <div class="wrap">
 <?php    
-	echo "<h2>" . __( 'Custom URL shorter', '' ) . "</h2>"; 
+	echo "<h2>" . __( 'Custom URL shortener', '' ) . "</h2>"; 
 ?>
 <?php    
 	echo "<h4>" . __( 'Settings', 'settings_h4' ) . "</h4>"; 
@@ -124,7 +124,7 @@ function cus_control()
 ?>
 			<tr>
 				<td>		
-					<label>Other&nbsp;URL&nbsp;shorter</label>
+					<label>Other&nbsp;URL&nbsp;shortener</label>
 				</td>
 				<td>
 					<small>(<input type="input" id="cus-api" name="cus-api" value="<?php echo $options['api']; ?>">xxx.yyy.zzz)</small>

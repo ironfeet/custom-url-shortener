@@ -6,7 +6,7 @@ Requires at least: 2.6
 Tested up to: 3.0.1
 Stable tag: 0.3.4
  
-Add a short URL link to your posts or pages easily.
+Easily create a short URL link of a post or page, and add it to the page or post.
  
 == Description == 
  
@@ -14,15 +14,10 @@ You can easily add a short URL link to your posts or pages.
 
 Currently, the following URL shorter are supported: 
  
-* adf.ly
-* bit.ly
 * is.gd
-* sn.im
 * tinyurl.com
-* liurl.cn
-* duanurl.com
  
-You can also add other URL shortener. 
+You can also add any other URL shortener. 
  
  
 == Installation == 
@@ -51,7 +46,7 @@ To use:
  
 == Changelog == 
 = 0.3.5 =
-* removed liurl.cn and duanurl.com, because both of them are out of service.
+* removed liurl.cn and duanurl.com, adf.ly, bit.ly, and sn.im.
 
 = 0.3.4 =
 * Confirmed compatibility with 3.0.1
