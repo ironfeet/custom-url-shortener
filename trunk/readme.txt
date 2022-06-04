@@ -1,9 +1,9 @@
-=== Custom URL Shorter === 
+=== Custom URL Shortener === 
 Contributors: Jie Wang
 Donate link: https://ironfeet.me 
 Tags: short URL, URL shorter 
 Requires at least: 2.6
-Tested up to: 3.0.1
+Tested up to: 6.0
 Stable tag: 0.3.4
  
 Easily create a short URL link of a post or page, and add it to the page or post.
