@@ -44,7 +44,7 @@ function inline_uslink($content='')
 	return $content;
 }
 
-function custom_url_shorter() 
+function custom_url_shortener() 
 {
 	global $arr_us,$arr_us_api;
 	$options = get_option("inline_uslink");
@@ -160,7 +160,7 @@ function cus_control()
 
 function cus_admin_actions() 
 {
-	add_options_page("Custom-URL-Shorter", "Custom URL Shorter", 1, "Custom-URL-Shorter", "cus_control");
+	add_options_page("Custom-URL-Shortener", "Custom URL Shortener", 1, "Custom-URL-Shortener", "cus_control");
 }
 
 add_action('admin_menu', 'cus_admin_actions');
