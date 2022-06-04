@@ -4,31 +4,31 @@ Plugin Name: Custom URL Shortener
 Plugin URI: https://github.com/ironfeet/custom-url-shortener
 Description: Add a short URL link to your posts or pages easily.
 Author: Jie Wang
-Version: 0.3.4
+Version: 0.3.5
 Author URI: https://ironfeet.me
 */
 
-$arr_us = Array("is.gd","tinyurl.com");
-$arr_us_api = Array("https://is.gd/create.php?format=simple&url=","http://tinyurl.com/api-create.php?url=");
+$arr_us = Array("is.gd", "tinyurl.com");
+$arr_us_api = Array("https://is.gd/create.php?format=simple&url=", "http://tinyurl.com/api-create.php?url=");
 
 // inline_uslink
-function inline_uslink($content='') 
+function inline_uslink($content = '') 
 {
-	global $arr_us,$arr_us_api;
+	global $arr_us, $arr_us_api;
 	$options = get_option("inline_uslink");
-	if ( strpos($content, '[cus]') ) 
+	if (strpos($content, '[cus]')) 
 	{
 		$permalink=get_permalink();
 
-		if(array_search($options['cus'], $arr_us)===FALSE)
+		if(array_search($options['cus'], $arr_us) === FALSE)
 		{
-			$link=$options['api'];
-			$link.=$permalink;
+			$link = $options['api'];
+			$link .= $permalink;
 		}
 		else
 		{
-			$link=$arr_us_api[array_search($options['cus'], $arr_us)];
-			$link.=$permalink;
+			$link = $arr_us_api[array_search($options['cus'], $arr_us)];
+			$link .= $permalink;
 		}
 		
 		$ch = curl_init();
@@ -37,7 +37,7 @@ function inline_uslink($content='')
 		curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
 		curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, $timeout);
 		$link = curl_exec($ch);
-		$link='<a href="'.$link.'" >'.$options['linktext'].'</a>';
+		$link = '<a href="' . $link . '" >' . $options['linktext'] . '</a>';
 
 		$content = str_replace('[cus]', $link, $content);
 	}
@@ -46,19 +46,19 @@ function inline_uslink($content='')
 
 function custom_url_shortener() 
 {
-	global $arr_us,$arr_us_api;
+	global $arr_us, $arr_us_api;
 	$options = get_option("inline_uslink");
 
-	$permalink=get_permalink();
-	if(array_search($options['cus'], $arr_us)===FALSE)
+	$permalink = get_permalink();
+	if(array_search($options['cus'], $arr_us) === FALSE)
 	{
-		$link=$options['api'];
-		$link.=$permalink;
+		$link = $options['api'];
+		$link .= $permalink;
 	}
 	else
 	{
-		$link=$arr_us_api[array_search($options['cus'], $arr_us)];
-		$link.=$permalink;
+		$link = $arr_us_api[array_search($options['cus'], $arr_us)];
+		$link .= $permalink;
 	}
 	
 	$ch = curl_init();
@@ -67,7 +67,7 @@ function custom_url_shortener()
 	curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
 	curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, $timeout);
 	$link = curl_exec($ch);
-	$link='<a href="'.$link.'" >'.$options['linktext'].'</a>';
+	$link = '<a href="' . $link . '" >' . $options['linktext'] . '</a>';
 	echo $link;
 }
 
@@ -76,7 +76,7 @@ function cus_control()
 {
 	global $arr_us, $arr_us_api;
 	$options = get_option("inline_uslink");  
-	if (!is_array( $options )) 
+	if (!is_array($options)) 
 	{
 		$options = array(
 			'linktext' => 'Short URL',
@@ -103,7 +103,7 @@ function cus_control()
     		<table class="form-table">
 			
 <?php
-	for ($i=0;$i<count($arr_us);$i++) 
+	for ($i = 0; $i < count($arr_us); $i++) 
 	{
 		$us_id = $arr_us[$i];
 ?>
@@ -116,7 +116,7 @@ function cus_control()
 					<small>(<?php echo $arr_us_api[$i]?>xxx.yyy.zzz)</small>
 				</td>
 				<td>
-					<input class="radio" type="radio" id="<?php echo $us_id?>" name="group1" value="<?php echo $us_id?>" <?php echo (($us_id==$options['cus'])?' checked=1':''); ?>/>
+					<input class="radio" type="radio" id="<?php echo $us_id?>" name="group1" value="<?php echo $us_id?>" <?php echo (($us_id == $options['cus']) ? ' checked=1' : ''); ?>/>
 				</td>
 			</tr>
 <?php
@@ -144,9 +144,8 @@ function cus_control()
 			<tr>
 				<td colspan="3" style="color:#ff0000;">		
 					Tips:<br />
-					1. The API of adf.ly can only be gained after your registration. The API address in this plugin is generated from my adf.ly account. You can use my API address or register your own API address as you wish. :) <br />
-					2. Create a page temaplate with function custom_url_shorter();.<br />
-					3. Publish a page or a post with html [cus].
+					1. Create a page temaplate with function custom_url_shortener();.<br />
+					2. Publish a page or a post with html [cus].
 				</td>
 			</tr>
 		</table>
