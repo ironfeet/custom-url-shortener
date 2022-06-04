@@ -4,7 +4,7 @@ Plugin Name: Custom URL Shortener
 Plugin URI: https://github.com/ironfeet/custom-url-shortener
 Description: Add a short URL link to your posts or pages easily.
 Author: Jie Wang
-Version: 0.3.5
+Version: 0.3.6
 Author URI: https://ironfeet.me
 */
 

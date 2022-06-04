@@ -43,9 +43,12 @@ To use:
 1. https://ironfeet.me
  
 == Changelog == 
-= 0.3.5 =
-* removed liurl.cn and duanurl.com, adf.ly, bit.ly, and sn.im.
+= 0.3.6 =
+* removed adf.ly, bit.ly, and sn.im.
 * The default URL shortener has been changed to is.gd
+
+= 0.3.5 =
+* removed liurl.cn and duanurl.com.
 
 = 0.3.4 =
 * Confirmed compatibility with 3.0.1
